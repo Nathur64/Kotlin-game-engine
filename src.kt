@@ -6,9 +6,6 @@ class Quadruple constructor(first :Any, second :Any, third :Any, forth :Any){
     var forth= forth;
     override open fun toString() :String{ return "($first, $second, $third, $forth)"; };
     open fun copy() :Quadruple= Quadruple(this.first, this.second, this.third, this.forth);
-    open fun iadd(o :Quadruple){
-        this.first= this.first.toLong() + o.first.toLong();
-    };
 };
 fun gType(Type :Any) :String{
     return when(Type.javaClass){
