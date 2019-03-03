@@ -1,6 +1,7 @@
 package Kotlin1;
 /**
  * This is a collection of classes and functions that have not been completely tested, and have not yet been categorized yet.  
+ * The quaternion class is only uncategorized.  
 **/
 class Quadruple constructor(first :Any, second :Any, third :Any, forth :Any){
     var first= first;
