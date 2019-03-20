@@ -1,0 +1,18 @@
+package net;
+import io.File;
+class Logger constructor(var LogPath :String, var ClassPath :String){
+    var fp= LogPath;
+    var cp= ClassPath;
+    fun Raw(MsgType :String, Msg :String){
+        var f= File(this.fp);
+        var dts= System.nanoTime();
+        var d= "\n[${dts} ${MsgType}] <${this.ClassPath}>:   ${Msg}";
+        println(d);
+        f +d;
+    };
+    fun Info(Msg :String){this.Raw("Info",Msg)};
+    fun Dbg(Msg :String){this.Raw("Dbg",Msg)};
+    fun Warn(Msg :String){this.Raw("Warn",Msg)};
+    fun Error(Msg :String){this.Raw("Error",Msg)};
+    fun Fatal(Msg :String){this.Raw("Fatal",Msg)};
+};
