@@ -1,5 +1,8 @@
 package net;
 import io.File;
+/**
+ * Logs information such as debug processes, messages, warnings, errors, and fatal errors to the operator, so that they can report bugs.  
+**/;
 class Logger constructor(var LogPath :String, var ClassPath :String){
     var fp= LogPath;
     var cp= ClassPath;
