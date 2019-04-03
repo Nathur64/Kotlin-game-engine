@@ -2,6 +2,7 @@ package io;
 import java.io.File;
 import sys.fp as sfp;
 //Note:   <io.File> can be used to open, read, write, and append to files.  
+//Note:   Additional input types for this class may be added in the future.  
 class File constructor(var fp :String) {
     init{ this.fp= sfp(fp); };
     operator fun plus(d :ByteArray){ File(this.fp).appendBytes(d); };
