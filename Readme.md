@@ -22,3 +22,5 @@ Now that you read the summory, and the requrements, I would like to share what t
 *   Security analysis must be available to game-developers.  
 *   Data-encryption must be available to developers.  
 *   Automatic ip/uuid generation, and client-data encryption, to make sure the client data is securely stored, and to allow mac-bans, mac-mutes, mac-kicks, and mac-warns when needed.  IP-bans just wont work for kicking out all hackers.  
+
+Parts of this game-engine will be private and therefore instead of source-code, you will file compilied files instead.  I will be employing methods to protect my work in namespaces such as 'io', especially because the gamming community prefers that no one can gain an advantage via hacked clients.  
